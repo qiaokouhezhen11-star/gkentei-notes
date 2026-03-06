@@ -1,22 +1,40 @@
-# gkentei-notes
+# AI Chat App (ChatGPT-like UI)
 
-# G検定 学習ログ
+ChatGPTのようなUI/UXを目指したAIチャットアプリです。  
+ストリーミング応答・自動スクロール・エラーハンドリング・IME（日本語変換）対応など、実用的なチャット体験を重視して作り込みました。
 
-- 目標：2026年5月回で合格
-- 学習期間：2026/03/01〜
-- 教材：公式テキスト、問題集
+## Demo
+- Local: `http://localhost:4000/chat`
 
-## 進捗
-- 2026/03/01：環境準備、学習計画作成
+（ここにスクリーンショットやGIFを後で追加予定）
 
-# G検定 学習ログ
+---
 
-## 目標
-2026年5月回 合格
+## Features
+- ✅ リアルタイム ストリーミング応答
+- ✅ メッセージ送受信（楽観的UI更新）
+- ✅ 生成停止（AbortController）
+- ✅ 自動スクロール / 「最新へ」ボタン
+- ✅ オフライン検出バナー
+- ✅ 送信失敗時の再送・削除
+- ✅ 文字数カウンタ（上限: 10,000）
+- ✅ IME対応（変換確定Enterで誤送信しない）
+- ✅ Markdown表示（GFM対応）
+- ✅ コードブロックのコピー機能
 
-## 学習計画
-- 3月：公式テキスト1周
-- 4月：問題集2周
+---
 
-## 進捗
-- 2026/03/01：GitHub環境構築
+## Tech Stack
+- Frontend: React + Vite（react-router dev）
+- UI: Tailwind CSS / lucide-react
+- Backend: `/api/chat` 経由でAIへ接続（ストリーミング対応）
+- Markdown: react-markdown + remark-gfm
+
+---
+
+## Getting Started
+
+### 1) Install
+```bash
+cd apps/web
+npm install --legacy-peer-deps
