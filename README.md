@@ -12,7 +12,7 @@ ChatGPTのようなUI/UXを目指したAIチャットアプリです。
 
 ## Features
 - ✅ リアルタイム ストリーミング応答
-- ✅ メッセージ送受信（楽観的UI更新）
+- ✅ メッセージの送受信（楽観的UI更新）
 - ✅ 生成停止（AbortController）
 - ✅ 自動スクロール / 「最新へ」ボタン
 - ✅ オフライン検出バナー
@@ -32,23 +32,8 @@ ChatGPTのようなUI/UXを目指したAIチャットアプリです。
 
 ---
 
-## Getting Started
-
-### 1) Install
-```bash
-cd apps/web
-npm install --legacy-peer-deps
-npm run dev
-
 ## Environment Variables
-Create `apps/web/.env.local` and set:
-
-```bash
-git add README.md
-git commit -m "Update README: env setup and run steps"
-git push
-
-
+`apps/web/.env.local` を作成して、以下を設定してください：
 
 ```env
 OPENAI_API_KEY=your_key_here
