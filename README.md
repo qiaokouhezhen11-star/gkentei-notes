@@ -36,7 +36,6 @@ ChatGPTのようなUI/UXを目指したAIチャットアプリです。
 
 ```env
 OPENAI_API_KEY=your_key_here
----
 
 ## Project Structure (main)
 ```text
