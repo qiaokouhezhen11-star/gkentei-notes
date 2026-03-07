@@ -31,12 +31,11 @@ ChatGPTのようなUI/UXを目指したAIチャットアプリです。
 - Markdown: react-markdown + remark-gfm
 
 ---
-
 ## Environment Variables
 `apps/web/.env.local` を作成して、以下を設定してください：
 
 ```env
-
+OPENAI_API_KEY=your_key_here
 ---
 
 ## Project Structure (main)
